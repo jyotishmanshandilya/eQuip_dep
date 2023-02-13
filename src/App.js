@@ -1,23 +1,32 @@
-import logo from './logo.svg';
 import './App.css';
+import Header from "./components/Header";
+import About from './components/About';
+import Intro from './components/Intro';
+import Services from './components/Services';
+import Contact from './components/Contact';
+import servicesData from './components/servicesData';
 
 function App() {
+  const services = servicesData.map((service)=>{
+    return (
+      <Services
+        img = {service.image}
+        desc = {service.description}
+        title = {service.title}
+        key = {service.id}
+      />
+    )
+  });
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+      <Header/>
+      <Intro/>
+      <About/>
+      <section id='services' className='services--card'>
+        {services}
+      </section>
+      <Contact/>
     </div>
   );
 }
