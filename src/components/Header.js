@@ -1,12 +1,12 @@
 import React, {useState} from 'react'
 import {AppBar, Toolbar, Typography, Box, Tabs , Tab, Divider} from '@mui/material';
 const Header = () => {
-  const logo = require('../images/tranlo.png');
+  const logo = require('../images/logo.png');
   const [value, setChange] = useState();
   return (
-    <AppBar sx={{background:"#1E1E21"}}>
+    <AppBar sx={{background:"#1E1E21"}} >
       <Toolbar>
-        <img style={{height:"45px", width:"90px"}} src={logo}/>
+        <img style={{height:"45px", width:"150px"}} src={logo}/>
         <Box display="flex" marginLeft="auto" marginRight="auto">
           <Tabs 
             variant="scrollable" 
