@@ -4,7 +4,6 @@ import { Link } from '@mui/material';
 import insta from '../images/instagram.svg';
 import linkedin from '../images/linkedin.svg';
 import email from '../images/mail.svg';
-import 'animate.css';
 
 export default function Contact() {
   return (

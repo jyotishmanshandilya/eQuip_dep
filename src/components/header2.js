@@ -19,7 +19,7 @@ const drawerWidth = 240;
 const navItems = ['home', 'about','services', 'contact'];
 
 function DrawerAppBar(props) {
-const logo = require('../images/logo.png');
+  const logo = require('../images/eqll.png');
   const { window } = props;
   const [mobileOpen, setMobileOpen] = React.useState(false);
 
