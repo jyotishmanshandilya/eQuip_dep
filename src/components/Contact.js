@@ -20,7 +20,6 @@ export default function Contact() {
         <Link href="mailto:yourself.equip@gmail.com" className="link">
             <img src={email} alt='Email Icon'/>
         </Link>
-        <h1 class="animate__animated animate__bounce">An animated element</h1>
       </div>
     </div>
   );

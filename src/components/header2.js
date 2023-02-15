@@ -16,7 +16,7 @@ import Typography from '@mui/material/Typography';
 import Button from '@mui/material/Button';
 
 const drawerWidth = 240;
-const navItems = ['Home', 'About','Services', 'Contact'];
+const navItems = ['home', 'about','services', 'contact'];
 
 function DrawerAppBar(props) {
 const logo = require('../images/logo.png');
@@ -30,13 +30,13 @@ const logo = require('../images/logo.png');
   const drawer = (
     <Box onClick={handleDrawerToggle} sx={{ textAlign: 'center' }}>
       <Typography variant="h6" sx={{ my: 2 }}>
-        MUI
+        eQuip
       </Typography>
       <Divider />
       <List>
         {navItems.map((item) => (
           <ListItem key={item} disablePadding>
-            <ListItemButton sx={{ textAlign: 'center' }}>
+            <ListItemButton href={(item=='home') ? '/' : `#${item}`} sx={{ textAlign: 'center' }}>
               <ListItemText primary={item} />
             </ListItemButton>
           </ListItem>
@@ -64,7 +64,7 @@ const logo = require('../images/logo.png');
           <img style={{height:"45px", width:"150px"}} src={logo}/>
           <Box sx={{ display: { xs: 'none', sm: 'block' } }} marginLeft="auto" marginRight="auto">
             {navItems.map((item) => (
-              <Button key={item} sx={{ color: '#fff' }}>
+              <Button href={(item=='home') ? '/' : `#${item}`} key={item} sx={{ color: '#fff' }}>
                 {item}
               </Button>
             ))}
