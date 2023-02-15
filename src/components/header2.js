@@ -61,7 +61,7 @@ const logo = require('../images/logo.png');
           >
             <MenuIcon />
           </IconButton>
-          <img style={{height:"45px", width:"150px"}} src={logo}/>
+          <img className='logo' style={{height:"45px", width:"150px"}} src={logo}/>
           <Box sx={{ display: { xs: 'none', sm: 'block' } }} marginLeft="auto" marginRight="auto">
             {navItems.map((item) => (
               <Button href={(item=='home') ? '/' : `#${item}`} key={item} sx={{ color: '#fff' }}>

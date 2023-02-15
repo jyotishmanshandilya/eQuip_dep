@@ -76,8 +76,14 @@ body{
   height: auto;
 }
 
-/* @media screen and (min-width: 480px){
-  .about--subheader{
-    font-weight: 400;
+.logo{
+  margin: 0 auto;
+}
+
+@media screen and (min-width: 480px){
+  .logo{
+    margin: 0;
   }
-} */
+}
+
+
