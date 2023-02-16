@@ -13,7 +13,7 @@ export default function Contact() {
         <Link href="https://www.instagram.com/_equipyourself_/" className="link">
             <img src={insta} alt='Instagram Icon'/>
         </Link>
-        <Link href="https://www.linkedin.com/in/equip-yourself/" className="link">
+        <Link href="https://www.linkedin.com/company/yourselfequip" className="link">
             <img src={linkedin} alt='LinkedIn Icon'/>
         </Link>
         <Link href="mailto:yourself.equip@gmail.com" className="link">
